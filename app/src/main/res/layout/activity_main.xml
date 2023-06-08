@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#CCDB0CEE"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:elevation="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/cardview_bg"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/user"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
+            android:layout_gravity="start"
+            android:padding="16dp"/>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Codeible"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/logoImageView"
+            android:layout_marginStart="16dp"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:background="@drawable/edittext_bg"
+            android:layout_margin="15dp"
+            android:layout_below="@id/logoImageView"
+            android:padding="16dp"/>
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_margin="15dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_below="@id/emailEditText"
+            android:padding="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_AnmationLogin"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="SIGN IN"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:layout_marginEnd="15dp"
+            android:layout_below="@id/passwordEditText"
+            android:background="@drawable/button_bg"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_AnmationLogin"
+            android:layout_marginStart="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/google"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/youtube"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/google_drive"
+                android:layout_marginEnd="16dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/signupTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New User? Click here to sign up!"
+            android:layout_below="@id/bt_AnmationLogin"
+            android:layout_margin="17dp"/>
+
+        <TextView
+            android:id="@+id/forgotPasswordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password? Click here!"
+            android:layout_below="@id/signupTextView"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="24dp"/>
+
+    </LinearLayout>
+</LinearLayout>
